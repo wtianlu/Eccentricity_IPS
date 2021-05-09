@@ -7,6 +7,9 @@
 % CONTENT: Main organisation script for preprocessing, analysis, visualisation
 % =======================================================================================
 % EDITS:
+% 
+% 2021.05.08 Recover original results on Ubuntu, re-do with smaller n
+% ---
 % 2020.08.10 thesis version 
 % 2020.06.15 ms version 20200609
 % 2020.05.30 Gathering separate scripts
@@ -16,7 +19,8 @@
 % 0. Initialise + load raw data  
 % ----------------------------------------------------------------------------------------
 clc; clearvars; close all;
-dirsmat = '/Users/Lulu/Documents/Experiments/WP2c_eccentricity/Code/dirs.mat';
+% dirsmat = '/Users/Lulu/Documents/Experiments/WP2c_eccentricity/Code/dirs.mat';
+dirsmat = '/home/tianlu/Documents/Projects/2018_fMRI_ECC/Code/Eccentricity_IPS/Analysis';
 if exist(dirsmat,'file')==0
     dirs.main = '/Users/Lulu/Documents/Experiments/WP2c_eccentricity'; 
     dirs.raw.main = [dirs.main '/Data_raw'];
